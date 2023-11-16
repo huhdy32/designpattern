@@ -2,19 +2,15 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        DecodedImage decodedImage;
-        ImageReader reader = null;
-        String image = args[0];
-        String format = image.substring(image.indexOf('.') + 1, (image.length()));
 
-        if (format.equals("gif")) {
-            reader = new GifReader(image);
-        }
-        if (format.equals("jpeg")) {
-            reader = new JpegReader(image);
-        }
-        assert reader != null;
-        decodedImage = reader.getDecodeImage();
-        System.out.println(decodedImage);
+        String request = "Cat";
+        // 클라이언트가 객체를 직접 생성하도록 하지 않고, 객체를 만드는 역할을 담당하는 클래스를 따로 구현하자
+        // -> 팩토리 메소드
+        Animal animal = Factory.createAnimal("Cat");
+
+        System.out.println(animal.getName());
+        System.out.println(animal.move());
+        System.out.println(animal.sound());
+
     }
 }
