@@ -1,4 +1,8 @@
-abstract class AbstractFactory {
+package factory;
+
+import phase.Expression;
+
+public abstract class AbstractFactory {
     public Expression prototype;
 
     public Expression makePhase() {

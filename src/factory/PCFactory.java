@@ -1,3 +1,8 @@
+package factory;
+
+import phase.Expression;
+import phase.PCPhase;
+
 public class PCFactory extends AbstractFactory {
     public PCFactory() {
         prototype = new PCPhase();
@@ -5,11 +10,11 @@ public class PCFactory extends AbstractFactory {
 
     @Override
     public Expression makeCompromise() {
-        return new Expression("\"do it yout way, any way, or no way\"");
+        return new Expression("\"do it your way, any way, or no way\"");
     }
 
     @Override
     public Expression makeGrade() {
-        return new Expression("\" ypu pass, self-esteem intact\"");
+        return new Expression("\" you pass, self-esteem intact\"");
     }
 }
