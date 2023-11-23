@@ -14,7 +14,7 @@ public class Factory {
         try {
             return prototypes.get(type).clone();
         } catch (NullPointerException e) {
-            System.out.println("Prototype with name:"+type+", doesn't exist");
+            System.out.println("Prototype with name:" + type + ", doesn't exist");
             return null;
         }
     }
