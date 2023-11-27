@@ -1,4 +1,6 @@
-public class SpicyPizzaBuilder extends PizzaBuilder{
+package builder;
+
+public class SpicyPizzaBuilder extends PizzaBuilder {
     @Override
     public void buildDough() {
         pizza.setDough("pan baked");

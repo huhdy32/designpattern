@@ -1,3 +1,8 @@
+package director;
+
+import builder.PizzaBuilder;
+import product.Pizza;
+
 public class Waiter {
     private PizzaBuilder pizzaBuilder;
 

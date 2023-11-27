@@ -1,3 +1,7 @@
+package builder;
+
+import product.Pizza;
+
 public abstract class PizzaBuilder {
     protected Pizza pizza;
 
